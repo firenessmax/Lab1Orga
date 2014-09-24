@@ -22,7 +22,7 @@ return 2* (c0 * x
  
  
 int main(void) {
-unsigned long long int iteraciones = 18446744073709551615;
+unsigned long long int iteraciones = 18446744073709551615;//18.446.744.073.709.551.615
 int x = 100;	//el valor de entrada
 double num = x-1;
 double den = x+1;
@@ -33,6 +33,7 @@ int i;
 for(i = 0; i < iteraciones; i++){
 resultado = logn(frac);
 }
+    
  
 printf("num es: %f\n", num);
 printf("den es: %f\n", den);
