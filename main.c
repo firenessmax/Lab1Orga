@@ -22,7 +22,7 @@ return 2* (c0 * x
  
  
 int main(void) {
-int iteraciones = 100000000;
+unsigned long long int iteraciones = 18446744073709551615;
 int x = 100;	//el valor de entrada
 double num = x-1;
 double den = x+1;
