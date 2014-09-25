@@ -3753,7 +3753,7 @@ double logn(double x){
 }
 int main(void) {
 int iteraciones = 1;
-int x = 400;	//el valor de entrada
+int x = 200;	//el valor de entrada
 double num = x-1;
 double den = x+1;
 double frac = num /den;

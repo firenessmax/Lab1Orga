@@ -47,7 +47,7 @@ for(i = 0; i < iteraciones; i++){
 resultado = logn(frac);
 }
 
-
+printf("minimal-version");
 printf("num es: %f\n", num);
 printf("den es: %f\n", den);
 printf("fraccion es: %f\n", frac);
