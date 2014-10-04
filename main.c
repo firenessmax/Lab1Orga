@@ -135,14 +135,13 @@ int main(int argc, char *argv[]) {
         printf("\n");
     }
     if(todoCorrecto){
-      int iteraciones = 1000000;
-
       double num = x-1;
       double den = x+1;
+      int iteraciones = 1000000;
+      int i;
       double frac = num /den;
       double resultado;
 
-      int i;
       for(i = 0; i < iteraciones; i++){
         resultado = logn(frac);
       }
