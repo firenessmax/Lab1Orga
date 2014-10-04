@@ -63,7 +63,7 @@ double logn(double x){
 }
 int main(int argc, char *argv[]) {
 
-int iteraciones = 1;
+int iteraciones = 1000000;
 double x;	//el valor de entrada
 sscanf(argv[1],"%lf",&x);
 double num = x-1;
