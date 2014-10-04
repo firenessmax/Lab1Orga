@@ -64,7 +64,7 @@ double logn(double x){
 int main(int argc, char *argv[]) {
 
 int iteraciones = 1;
-double x = 1.345;	//el valor de entrada
+double x;	//el valor de entrada
 sscanf(argv[1],"%lf",&x);
 double num = x-1;
 double den = x+1;
