@@ -145,9 +145,6 @@ int main(int argc, char *argv[]) {
       for(i = 0; i < iteraciones; i++){
         resultado = logn(frac);
       }
-      //printf("num es: %f\n", num);
-      //printf("den es: %f\n", den);
-      //printf("fraccion es: %f\n", frac);
       printf("El resultado es : %f\n", resultado);
     }
 
