@@ -1,4 +1,4 @@
 sources = main
 all: $(sources)
 $(sources):
-	gcc -pg -Wall $(sources).c -o logaritmo0
+	gcc -pg -Wall $(sources).c -o logaritmo2

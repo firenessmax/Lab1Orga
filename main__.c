@@ -33,52 +33,54 @@ double c18 = 0.02702702702702703;
 double c19 = 0.02564102564102564;
 
 double logn(double x){
-  return 2* (c0 * x
-               + c1 * x
-               * x * x
-               + c2 * x
-               * x * x * x * x
-               + c3 * x
-               * x * x * x * x * x * x
-               + c4 * x
-               * x * x * x * x * x * x * x * x
-               + c5 * x
-               * x * x * x * x * x * x * x * x * x * x
-               + c6 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x
-               + c7 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c8 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c9 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c10 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c11 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c12 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c13 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c14 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c15 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c16 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c17 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c18 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               + c19 * x
-               * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x * x
-               );
+  double x_cuad = x * x;
+  double retorno = c0*x;
+  double x_2nplus1=x * x_cuad;
+  retorno += c1 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c2 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c3 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c4 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c5 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c6 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c7 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c8 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c9 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c10 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c11 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c12 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c13 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c14 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c15 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c16 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c17 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c18 * x_2nplus1;
+  x_2nplus1 *= x_cuad;
+  retorno += c19 * x_2nplus1;
+
+  return 2* retorno;
 }
 
 
 int main(int argc, char *argv[]) {
-  double x;	//el valor de entrada
-  int todoCorrecto=0;
+  double x=1;	//el valor de entrada
+  //int todoCorrecto=0;
   int c;
   int digit_optind = 0;
 
@@ -114,8 +116,8 @@ int main(int argc, char *argv[]) {
             break;
       case 'c':
             //printf("option c with value '%s'\n", optarg);
-            if(sscanf(optarg,"%lf",&x))todoCorrecto=1;
-            else {
+            if(!sscanf(optarg,"%lf",&x))/*todoCorrecto=1;
+            else */{
               printf("¡¡Error en los argumentos!!\n");
               print_usage();
             }
@@ -134,7 +136,7 @@ int main(int argc, char *argv[]) {
             printf("%s ", argv[optind++]);
         printf("\n");
     }
-    if(todoCorrecto){
+
       double num = x-1;
       double den = x+1;
       int iteraciones = 1000000;
@@ -146,7 +148,7 @@ int main(int argc, char *argv[]) {
         resultado = logn(frac);
       }
       printf("El resultado es : %f\n", resultado);
-    }
+
 
 
   return 0;
