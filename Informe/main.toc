@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {2}Marco Te\IeC {\'o}rico}{2}
+\contentsline {subsection}{\numberline {2.1}Serie de Taylor}{2}
+\contentsline {subsection}{\numberline {2.2}Pipeline}{2}
+\contentsline {subsection}{\numberline {2.3}getopt}{2}
+\contentsline {section}{\numberline {3}Desarrollo}{3}
+\contentsline {subsection}{\numberline {3.1}Descripci\IeC {\'o}n del problema}{3}
+\contentsline {subsection}{\numberline {3.2}Descripci\IeC {\'o}n del observatorio}{4}
+\contentsline {subsection}{\numberline {3.3}Descripci\IeC {\'o}n de las entidades y atributos}{5}
+\contentsline {section}{\numberline {4}Discusiones}{7}
+\contentsline {subsection}{\numberline {4.1}MER: Modelo Entidad Relaci\IeC {\'o}n}{7}
+\contentsline {subsection}{\numberline {4.2}MR: Modelo Relacional}{7}
+\contentsline {section}{\numberline {5}Conclusi\IeC {\'o}n}{8}
