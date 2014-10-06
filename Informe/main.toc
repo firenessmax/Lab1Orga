@@ -6,22 +6,10 @@
 \contentsline {section}{\numberline {3}Desarrollo}{3}
 \contentsline {subsection}{\numberline {3.1}Gr\IeC {\'a}fico de iteraciones}{3}
 \contentsline {subsection}{\numberline {3.2}Descripci\IeC {\'o}n del problema}{3}
-<<<<<<< Updated upstream
 \contentsline {subsection}{\numberline {3.3}Primer Paso - main0.c}{3}
 \contentsline {subsection}{\numberline {3.4}Segundo Paso - main1.c}{4}
 \contentsline {subsection}{\numberline {3.5}Tercer Paso - main2.c}{4}
 \contentsline {subsection}{\numberline {3.6}Cuarto Paso - main3.c}{4}
-\contentsline {subsection}{\numberline {3.7}Quinto Paso - main4.c}{4}
+\contentsline {subsection}{\numberline {3.7}Quinto Paso - main4.c}{5}
 \contentsline {section}{\numberline {4}Discusiones}{6}
-\contentsline {subsection}{\numberline {4.1}MER: Modelo Entidad Relaci\IeC {\'o}n}{6}
-\contentsline {subsection}{\numberline {4.2}MR: Modelo Relacional}{6}
-\contentsline {section}{\numberline {5}Conclusi\IeC {\'o}n}{7}
-=======
-\contentsline {subsection}{\numberline {3.3}Primer Paso}{3}
-\contentsline {subsection}{\numberline {3.4}Segundo Paso}{4}
-\contentsline {subsection}{\numberline {3.5}Tercer Paso}{4}
-\contentsline {section}{\numberline {4}Discusiones}{5}
-\contentsline {subsection}{\numberline {4.1}MER: Modelo Entidad Relaci\IeC {\'o}n}{5}
-\contentsline {subsection}{\numberline {4.2}MR: Modelo Relacional}{5}
-\contentsline {section}{\numberline {5}Conclusi\IeC {\'o}n}{6}
->>>>>>> Stashed changes
+\contentsline {section}{\numberline {5}Conclusi\IeC {\'o}n}{8}
