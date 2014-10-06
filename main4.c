@@ -34,7 +34,6 @@ double c19 = 0.02564102564102564;
 
 double logn(double x){
   double x_2 = x * x;
-  double temp;
   double x_4 = x_2 * x_2;
   double retorno = x * (c0 + c1 * x_2 + x_4 * (c2 + x_2 * c3 + x_4 * (c4 + x_2 * c5 + x_4 * (c6 + x_2 * c7 + x_4 * (c8 + x_2 * c9 + x_4 * (c10
                + x_2 * c11 + x_4 * (c12 + x_2 * c13 + x_4 * (c14 + x_2 * c15 + x_4 * (c16 + x_2 * c17 + x_4 * (c18 + x_2 * c19 ))))))))));
