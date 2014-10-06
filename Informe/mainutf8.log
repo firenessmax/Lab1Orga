@@ -1,14 +1,10 @@
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.10.5)  6 OCT 2014 01:05
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 OCT 2014 00:43
->>>>>>> Stashed changes
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  5 OCT 2014 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**mainutf8.tex
+(./mainutf8.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
@@ -317,8 +313,9 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (/usr/local/texlive/2014/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count92
-) (./main.aux)
-\openout1 = `main.aux'.
+)
+(./mainutf8.aux)
+\openout1 = `mainutf8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -439,75 +436,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/LogoUsach.pdf>] (./main.toc)
-\tf@toc=\write3
-\openout3 = `main.toc'.
+s/LogoUsach.pdf>]
 
- [2] [1] [2]
-<<<<<<< Updated upstream
-<images/graf1.png, id=23, 599.841pt x 295.3434pt>
-File: images/graf1.png Graphic file (type png)
- <use images/graf1.png>
-[3 <./images/graf1.png>] [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
+./mainutf8.tex:62: Package inputenc Error: Unicode char \u8: not set up for u
+se with LaTeX.
 
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \tableofcontents
+                     
+? 
+./mainutf8.tex:62: Emergency stop.
+ ...                                              
+                                                  
+l.62 \tableofcontents
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
- [6] [7]
-No file main.bbl.
-(./main.aux) ) 
+ 
 Here is how much of TeX's memory you used:
- 2057 strings out of 493848
- 25742 string characters out of 1152823
- 171557 words of memory out of 3000000
- 5331 multiletter control sequences out of 15000+50000
- 7894 words of font info for 28 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 25i,7n,19p,743b,150s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (9 pages, 150467 bytes).
-=======
-<images/graf1.png, id=24, 599.841pt x 295.3434pt>
-File: images/graf1.png Graphic file (type png)
- <use images/graf1.png>
-Package pdftex.def Info: images/graf1.png used on input line 93.
-(pdftex.def)             Requested size: 449.87964pt x 221.50699pt.
-
-[3 <./images/graf1.png>] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
- [5] [6]
-No file main.bbl.
-(./main.aux) ) 
-Here is how much of TeX's memory you used:
- 2727 strings out of 493117
- 37263 string characters out of 6135433
- 194574 words of memory out of 5000000
- 6154 multiletter control sequences out of 15000+600000
+ 2694 strings out of 493117
+ 36966 string characters out of 6135433
+ 193574 words of memory out of 5000000
+ 6131 multiletter control sequences out of 15000+600000
  7894 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,23p,478b,160s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb>
-Output written on main.pdf (8 pages, 144609 bytes).
->>>>>>> Stashed changes
-PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 38i,7n,23p,244b,158s stack positions out of 5000i,500n,10000p,200000b,80000s
+./mainutf8.tex:62:  ==> Fatal error occurred, no output PDF file produced!

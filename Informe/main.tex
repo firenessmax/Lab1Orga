@@ -102,10 +102,11 @@ Lo primero que se realizó, fue escribir el programa tal cual se presentó en el
 Lo segundo en hacer fue colocar el desarrollo de la fracción en la parte principal del programa, para así no calcularlo en cada multiplicación de la función logaritmo, sino que solo multiplicar el resultado ya obtenido para así calcular la serie de taylor, dentro de este mismo paso, se decidió aumentar la cantidad de constantes y por lo tanto la cantidad de multiplicaciones realizadas al calcular la serie de taylor, ésto para que el valor obtenido sea más cercano al valor real del logaritmo natural, aquí se presenta la primera gran problemática, ya que al aumentar demasiado la cantidad de constantes, el programa demora más tiempo al calcular el valor, así que se decide trabajar solo con 20 constantes.
 
 \subsection{Tercer Paso - main2.c}
-Se decide trabajar con los valores ya calculados, es decir, ir agregando a la multiplicación ya realizada, el valor que se debe multiplicar después, disminuyendo así la cantidad de multiplicaciónes que deben realizarse.
+Se decide trabajar con los valores ya calculados, es decir, ir agregando a la multiplicación ya realizada, el valor que debe ser multiplicado después, disminuyendo así la cantidad de multiplicaciones que deben realizarse.
 
 \subsection{Cuarto Paso - main3.c}
-Del programa anterior, se decidió.
+Del programa anterior, se decidió que en la linea "retorno += c2 * x_2nplus1;" se están realizando 2 operaciones, una multiplicación y una suma, ademas de tener dependencia de la linea anterior "x_2nplus1 *= x_cuad;", considerando esto se decidió aumentar en una linea, y en ella depositar en una variable temporal   "temp=c2 * x_2nplus1;" con ello se manejan las dependencias, reduciendo el tiempo de ejecución.
+
 
 \subsection{Quinto Paso - main4.c}
 En el quinto paso se decidió cambiar la función que va ocupando los valores ya calculados, por una función que es netamente la factorización de lo que realiza la multiplicación en la serie de taylor, ya teniendo calculados dos valores que se repetirán a lo largo de la función que son x al cuadrado y x a la cuarta.
