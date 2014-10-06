@@ -83,7 +83,7 @@ La Serie de Taylor es una serie funcional y surge de una ecuación en la cual se
 \subsection{Pipeline}
 Es una técnica de implementación en la cual múltiples instrucciones están traslapadas en la ejecución. Esto sirve para disminuir el tiempo de ejecución de un programa.
 
-\subsection{getopt}
+\subsection{Getopt}
 Es una biblioteca de funciónes C, utilizado para analizar las opciones de línea de comandos .
 También es el nombre de un programa de Unix para analizar los argumentos de línea de comandos en shell scripts.%agregar referencia http://en.wikipedia.org/wiki/Getopt
 \newpage
@@ -95,14 +95,20 @@ También es el nombre de un programa de Unix para analizar los argumentos de lí
 \subsection{Descripción del problema}
 Se pide realizar la Serie de Taylor para resolver el logaritmo natural de un número, para luego ir mejorando el código, y después de eso, a través del uso de pipeline ir disminuyendo el tiempo de ejecución de este.
 
-\subsection{Primer Paso}
-Lo primero que se realizó, fué escribir el programa tal cual se presentó en el ejemplo, ésto es definiendo el valor de las constantes que se encuentran en el desarrollo de la serie de taylor, el desarrollo de la fracción que ésta ocupa se realizó en la parte principal del programa, y luego con éste valor se procede a calcular la serie de taylor.
+\subsection{Primer Paso - main0.c}
+Lo primero que se realizó, fue escribir el programa tal cual se presentó en el ejemplo, ésto es definiendo el valor de las constantes que se encuentran en el desarrollo de la serie de taylor, realizando la fracción en la función de logaritmo natural, para luego realizar las multiplicaciones de estas fracciones con las constantes.
 
-\subsection{Segundo Paso}
-Del programa ya creado, se decidió aumentar la cantidad de constantes y por lo tanto la cantidad de multiplicaciones realizadas al calcular la serie de taylor, ésto para que el valor obtenido sea más cercano al valor real del logaritmo natural, aquí se presenta la primera gran problemática, ya que al aumentar demasiado la cantidad de constantes, el programa demora más tiempo al calcular el valor, así que se decide trabajar solo con 20 constantes.
+\subsection{Segundo Paso - main1.c}
+Lo segundo en hacer fue colocar el desarrollo de la fracción en la parte principal del programa, para así no calcularlo en cada multiplicación de la función logaritmo, sino que solo multiplicar el resultado ya obtenido para así calcular la serie de taylor, dentro de este mismo paso, se decidió aumentar la cantidad de constantes y por lo tanto la cantidad de multiplicaciones realizadas al calcular la serie de taylor, ésto para que el valor obtenido sea más cercano al valor real del logaritmo natural, aquí se presenta la primera gran problemática, ya que al aumentar demasiado la cantidad de constantes, el programa demora más tiempo al calcular el valor, así que se decide trabajar solo con 20 constantes.
 
-\subsection{Tercer Paso}
-...
+\subsection{Tercer Paso - main2.c}
+Se decide trabajar con los valores ya calculados, es decir, ir agregando a la multiplicación ya realizada, el valor que se debe multiplicar después, disminuyendo así la cantidad de multiplicaciónes que deben realizarse.
+
+\subsection{Cuarto Paso - main3.c}
+Del programa anterior, se decidió.
+
+\subsection{Quinto Paso - main4.c}
+En el quinto paso se decidió cambiar la función que va ocupando los valores ya calculados, por una función que es netamente la factorización de lo que realiza la multiplicación en la serie de taylor, ya teniendo calculados dos valores que se repetirán a lo largo de la función que son x al cuadrado y x a la cuarta.
 \newpage
 \section{Discusiones}
 \subsection{MER: Modelo Entidad Relación}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.10.5)  5 OCT 2014 16:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.10.5)  6 OCT 2014 01:05
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -394,39 +394,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `main.toc'.
 
  [2] [1] [2]
+<images/graf1.png, id=23, 599.841pt x 295.3434pt>
+File: images/graf1.png Graphic file (type png)
+ <use images/graf1.png>
+[3 <./images/graf1.png>] [4] [5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
 
-Package natbib Warning: Citation `Wichterich2010' on page 3 undefined on input 
-line 91.
 
-[3] [4] [5] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 108.
-
- (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
- [7]
-[8]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+ [6] [7]
 No file main.bbl.
-
-Package natbib Warning: There were undefined citations.
-
 (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2052 strings out of 493848
- 25662 string characters out of 1152823
- 172557 words of memory out of 3000000
- 5328 multiletter control sequences out of 15000+50000
+ 2057 strings out of 493848
+ 25742 string characters out of 1152823
+ 171557 words of memory out of 3000000
+ 5331 multiletter control sequences out of 15000+50000
  7894 words of font info for 28 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 25i,7n,19p,280b,150s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,7n,19p,743b,150s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (10 pages, 121236 bytes).
+Output written on main.pdf (9 pages, 150467 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
