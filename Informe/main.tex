@@ -112,27 +112,23 @@ Del programa anterior, se decidió que en la linea "retorno += c2 * x_2nplus1;" 
 En el quinto paso se decidió cambiar la función que va ocupando los valores ya calculados, por una función que es netamente la factorización de lo que realiza la multiplicación en la serie de taylor, ya teniendo calculados dos valores que se repetirán a lo largo de la función que son x al cuadrado y x a la cuarta.
 \newpage
 \section{Discusiones}
-\subsection{MER: Modelo Entidad Relación}
+Al momento de crear el primer programa (main0), los resultados el tiempo era bastante alto, ésto se debía a que el programa en la obtención de cada término de la serie de taylor, realizaba la fracción que se necesitaba para obtenerlos, ya que el programa realizaba ésta tarea, obtuvimos que se demoraba 1150 ns/call, lo cual es bastante para un programa que solo calcula la serie de taylor.
 
-\subsection{MR: Modelo Relacional}
-\textbf{Entidades}
+Para mejorar ésto se realizó el segundo programa (main1) donde la realización de estas fracciones se hacía en la parte inicial del programa, haciendo así que el programa disminuyera su tiempo de forma considerable, ya que el valor de la fracción se calcula solo una vez, además, se nota que existe hazard en la obtención del valor x y el calculo de la fracción, separándolo entonces, en 3 funciones diferentes que pudieran éstar lo suficientemente distantes para no tener que esperar el valor de alguna para calcular el de la siguiente, por eso, encontramos que se calculan los valores de numerador y denominador, y luego se establecen otros valores, para luego calcular el valor de la fracción, así, no es necesario "esperar" los valores de numerador y denominador, ya que se encuentran calculados para este punto, gracias a esto se obtenie una mejora en el tiempo de ejución, bajando a 200,43 ns/call.
 
-\begin{itemize}
-\item Institución (Codigo\_institución, Nombre\_institución)
-\item Carrera (Cod\_Carrera, Nombre\_Carrera)
-\item Ramo (Cod\_Asig, Nombre\_Ramo, Semestre, Año)
-\item Material (Cod\_Material, Visibilidad, Versión, Autor)
-\end{itemize}
+Con estos datos aun no se lograba el resultado esperado, así que fue necesario implementar otra forma de realizar la serie de taylor, ésto fue multiplicando los datos anteriormente calculados, disminuyendo también la cantidad de multiplicaciones, puesto que ya no debia calcularse los valores a cada momento, sino ir aumentando el valor; así es como se obtiene una mejora bajando a 60,21 ns/call.
 
-\textbf{Relaciones}
-\begin{itemize}
-\item Imparte (Codigo\_institución, Cod\_Carrera)
-\item Contiene (Cod\_Carrera, Cod\_Asig)
-\end{itemize}
+El cambio siguiente fue más que nada en los hazards ya que habían tiempos en que se necesitaba esperar los valores de multiplicaciones anteriores, es así como se mejora ésto con el uso de un temporal donde se almacena un dato y con esto se manejan las dependencias y se disminuye el tiempo de ejecución a 40,13 ns/call.
+
+Si bien se logra disminuir el tiempo de ejecución utilizando los valores multiplicados anteriormente y aumentándolos, se intenta con una factorización de los valores a multiplicar, con ésto se disminuye aun más el tiempo de ejecución del programa, si bien se logran ver algunos hazards, no encontramos formas de disminuirlos con la última forma elegida; pese a esto, se decide dejarla como la función final, ya que aun con los hazards, éste programa demora menos tiempo, quedando así en 30,13 ns/call.
 
 \newpage
 \section{Conclusión}
-\lipsum[1-3]
+Frente a la problemática de crear el programa, éste fue confuso al inicio ya que al inicio fue complicado entender la actividad a realizar, además del poco conocimiento en github, hazards y pipeline. Una vez entendido todo esto fue menos complejo el poder avanzar en el trabajo realizado.
+
+Se logró cumplir con los objetivos del trabajo, tanto el objetivo principal como los objetivos específicos, disminuyendo el tiempo de ejecución del programa; aunque creemos que éste puede reducirse más, nos vemos limitados a nuestros conocimientos actuales y a nuestra poca experiencia frente al tema, ya que, nosotros creemos que ya se encuentra bastante reducido el tiempo de ejecución y no se nos ocurren otras formas de reducirlo más.
+
+Además, el programa funciona correctamente y logra obtener el resultado esperado en menor tiempo que el primer programa realizado.
 
 \newpage
 \addcontentsline{toc}{section}{Referencias}
